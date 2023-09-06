@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { Product, fetchProducts } from "./product";
+import type { Product } from "./product";
+import { fetchProducts } from "./fetchProducts";
 
 describe("fetchProducts", () => {
   const products = fetchProducts();
