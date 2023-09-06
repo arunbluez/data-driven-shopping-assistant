@@ -28,7 +28,7 @@ describe("extractFilters", () => {
   });
 });
 
-const createDummyProduct = (displayTechnology: string): Product => ({
+export const createDummyProduct = (displayTechnology: string): Product => ({
   availabilities: {
     store: false,
     online: false,
