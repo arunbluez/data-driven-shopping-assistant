@@ -1,0 +1,2993 @@
+{
+  "data": {
+    "products": [
+      {
+        "assets": {
+          "images": [
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_105413335"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_103449301"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_103449304"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_103449330"
+            }
+          ]
+        },
+        "availabilities": {
+          "online": {
+            "amount": 368,
+            "fulfillmentTime": {
+              "notAfter": "2023-09-12",
+              "notBefore": "2023-09-08"
+            }
+          },
+          "store": null
+        },
+        "customerFriendlyName": "SAMSUNG GU55CU7179 LED TV (Flat, 55 Zoll / 138 cm, UHD 4K, SMART TV, Tizen)",
+        "prices": {
+          "displaySalesPrice": {
+            "value": 519.99,
+            "currency": "EUR"
+          }
+        },
+        "featureGroups": [
+          {
+            "name": "Technische Merkmale",
+            "features": [
+              {
+                "name": "SMART TV",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm/Zoll)",
+                "values": [
+                  {
+                    "value": "138 cm / 55 Zoll",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Betriebssystem",
+                "values": [
+                  {
+                    "value": "Tizen",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen ohne Standfuß (BxHxT)",
+                "values": [
+                  {
+                    "value": "1230.5 mm / 707.2 mm / 59.9 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Prozessor",
+                "values": [
+                  {
+                    "value": "Crystal Processor 4K",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildqualität",
+                "values": [
+                  {
+                    "value": "UHD 4K",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Produkttyp",
+                "values": [
+                  {
+                    "value": "LED TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Display Technologie",
+                "values": [
+                  {
+                    "value": "LED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "HDR Typ",
+                "values": [
+                  {
+                    "value": "HDR10+",
+                    "unit": null
+                  },
+                  {
+                    "value": "Hybrid Log-Gamma (HLG)",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bild",
+            "features": [
+              {
+                "name": "USB-Recording",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildwiederholungsfrequenz",
+                "values": [
+                  {
+                    "value": "50 Hz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "High Dynamic Range (HDR)",
+                "values": [
+                  {
+                    "value": "HDR, HDR10+-Unterstützung",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung",
+                "values": [
+                  {
+                    "value": "3.840 x 2.160 Pixel",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Native Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "60",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Bildverbesserungssystem",
+                "values": [
+                  {
+                    "value": "UHD Dimming, Crystal Prozessor 4K, Mega Kontrast, Film Modus",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Empfang",
+            "features": [
+              {
+                "name": "DVB-S2",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-T2 HD",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-C",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Empfangsarten",
+                "values": [
+                  {
+                    "value": "DVB-T2 HD, DVB-C, DVB-S, DVB-S2",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-S",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ausstattung",
+            "features": [
+              {
+                "name": "Elektronische Programmzeitschrift (EPG)",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Sprachsteuerung",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bild-in-Bild (PiP)",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "HDMI-CEC",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "App-steuerbar",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "CI+ zertifiziert",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Menü Sprachen",
+                "values": [
+                  {
+                    "value": "Englisch, Estnisch, Finnisch, Französisch, Deutsch, Griechisch, Ungarisch, Italienisch, Lettisch, Litauisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Serbisch, Slowakisch, Spanisch, Schwedisch, Bulgarisch, Kroatisch, Tschechisch, Dänisch, Niederländisch, Slowenisch, Albanisch, Mazedonisch, Bosnisch, Russisch (nur wenn TV in Estland, Lettland oder Litauen betrieben wird)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmform",
+                "values": [
+                  {
+                    "value": "Flat",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ton",
+            "features": [
+              {
+                "name": "Dolby Decoder",
+                "values": [
+                  {
+                    "value": "2-Kanal",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Musikleistung",
+                "values": [
+                  {
+                    "value": "20 Watt (RMS)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Klangsystem",
+                "values": [
+                  {
+                    "value": "OTS Lite",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Anschlüsse + Verbindungen",
+            "features": [
+              {
+                "name": "Bluetooth",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Internetfähig",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl USB Anschlüsse",
+                "values": [
+                  {
+                    "value": "1",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anschlüsse",
+                "values": [
+                  {
+                    "value": "3x HDMI, 1x USB, 1x Digital-Audioausgang (optisch), 2x Antenneneingang, Lan, C+",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Internetfunktionen",
+                "values": [
+                  {
+                    "value": "HbbTV 2.0.3, Webbrowser",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl HDMI Anschlüsse",
+                "values": [
+                  {
+                    "value": "3, HDMI 2.1 Funktionen 4K@60Hz, HDR10+, ALLM (Auto Game Mode), eARC (2-Port)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Vorhandene Steckplätze",
+                "values": [
+                  {
+                    "value": "CI+",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "WLAN",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Allgemeine Merkmale",
+            "features": [
+              {
+                "name": "Gewicht mit Standfuß",
+                "values": [
+                  {
+                    "value": "14.2",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Hersteller Artikelnummer",
+                "values": [
+                  {
+                    "value": "GU55CU7179UXZG",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Packmaße (BxHxT) (cm)",
+                "values": [
+                  {
+                    "value": "138.6 cm / 843 cm / 158 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Garantiehinweis",
+                "values": [
+                  {
+                    "value": "Bei einem Defekt steht Ihnen unser Home-Service zur Verfügung. Um diesen Service in Anspruch zu nehmen, kontaktieren Sie bitte unsere Service-Hotline.",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "System oder kompatibel mit System",
+                "values": [
+                  {
+                    "value": "Bluetooth, Wlan, Lan",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Smart Home Bereich",
+                "values": [
+                  {
+                    "value": "Smart TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen mit Standfuß (B/H/T)",
+                "values": [
+                  {
+                    "value": "1230.5 mm / 783.3 mm / 250.2 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Breite mit Standfuß",
+                "values": [
+                  {
+                    "value": "1230.5",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht mit Verpackung (Brutto)",
+                "values": [
+                  {
+                    "value": "19.5",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht ohne Standfuß",
+                "values": [
+                  {
+                    "value": "13.9",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Breite ohne Standfuß",
+                "values": [
+                  {
+                    "value": "1230.5",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (normiert)",
+                "values": [
+                  {
+                    "value": "Schwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Farbe Standfuss",
+                "values": [
+                  {
+                    "value": "Nachtschwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "59.9",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Lieferumfang",
+                "values": [
+                  {
+                    "value": "LED TV, Fernbedienung, Stromkabel, Anleitung",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe mit Standfuß",
+                "values": [
+                  {
+                    "value": "250.2",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Breite Verpackung",
+                "values": [
+                  {
+                    "value": "138.6",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Höhe Verpackung",
+                "values": [
+                  {
+                    "value": "843",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe Verpackung",
+                "values": [
+                  {
+                    "value": "158",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Gurtmaß Verpackung",
+                "values": [
+                  {
+                    "value": "1436.2 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe mit Standfuß",
+                "values": [
+                  {
+                    "value": "783.3",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (laut Hersteller)",
+                "values": [
+                  {
+                    "value": "Schwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "707.2",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "VESA Norm",
+                "values": [
+                  {
+                    "value": "200 x 200",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Update Richtlinie",
+            "features": [
+              {
+                "name": "Min. Laufzeit Software Updates",
+                "values": [
+                  {
+                    "value": "8",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Herstellerunterstützte Software updates",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelljahr",
+                "values": [
+                  {
+                    "value": "2023",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Energieverbrauchsangaben (EU 2017/1369)",
+            "features": [
+              {
+                "name": "EU Energy Efficiency Scale (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "A-G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Verfügbarkeit von Ersatzteilen",
+                "values": [
+                  {
+                    "value": "7",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Produktunterstützung",
+                "values": [
+                  {
+                    "value": "7",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse Color Code (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "RGB - 227 6 19",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (SDR)",
+                "values": [
+                  {
+                    "value": "83",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (HDR)",
+                "values": [
+                  {
+                    "value": "G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelkennung",
+                "values": [
+                  {
+                    "value": "GU55CU7179U",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm)",
+                "values": [
+                  {
+                    "value": "138",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Verfügbarkeit von Software- und Firmware-Aktualisierungen",
+                "values": [
+                  {
+                    "value": "8",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Art der Stromversorgung (Netzteil)",
+                "values": [
+                  {
+                    "value": "Extern",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (Zoll)",
+                "values": [
+                  {
+                    "value": "55",
+                    "unit": "Zoll"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Bereitschaftszustand",
+                "values": [
+                  {
+                    "value": "0.5",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von SDR-Inhalten",
+                "values": [
+                  {
+                    "value": "83",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme im vernetzten Bereitschaftsbetrieb",
+                "values": [
+                  {
+                    "value": "2.0",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (HDR)",
+                "values": [
+                  {
+                    "value": "139",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung (Pixel)",
+                "values": [
+                  {
+                    "value": "3.840 x 2.160",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Art des elektronischen Displays",
+                "values": [
+                  {
+                    "value": "Fernsehgerät",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Seitenverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von HDR-Inhalten",
+                "values": [
+                  {
+                    "value": "139",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Verwendete Panel Technologie",
+                "values": [
+                  {
+                    "value": "LED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Automatische Helligkeitsregelung (ABC) vorhanden",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Sichtbare Bildschirmfläche",
+                "values": [
+                  {
+                    "value": "82.3",
+                    "unit": "dm²"
+                  }
+                ]
+              },
+              {
+                "name": "Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "60",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Spracherkennungssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anwesenheitssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "onlineReviews": {
+          "averageRating": 4.290322580645161,
+          "entries": {
+            "amount": 31
+          }
+        }
+      },
+      {
+        "assets": {
+          "images": [
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_107659645"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609207"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609208"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609305"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609323"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609263"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_104609324"
+            }
+          ]
+        },
+        "availabilities": {
+          "online": {
+            "amount": 341,
+            "fulfillmentTime": {
+              "notAfter": "2023-09-12",
+              "notBefore": "2023-09-09"
+            }
+          },
+          "store": null
+        },
+        "customerFriendlyName": "OK. OTV 40GF-5023C LCD TV (Flat, 40 Zoll / 100 cm, Full-HD, SMART TV, Google TV)",
+        "prices": {
+          "displaySalesPrice": {
+            "value": 219,
+            "currency": "EUR"
+          }
+        },
+        "featureGroups": [
+          {
+            "name": "Technische Merkmale",
+            "features": [
+              {
+                "name": "SMART TV",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm/Zoll)",
+                "values": [
+                  {
+                    "value": "100 cm / 40 Zoll",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Betriebssystem",
+                "values": [
+                  {
+                    "value": "Google TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen ohne Standfuß (BxHxT)",
+                "values": [
+                  {
+                    "value": "892.3 mm / 512.8 mm / 86.7 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Prozessor",
+                "values": [
+                  {
+                    "value": "MT9216",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildqualität",
+                "values": [
+                  {
+                    "value": "Full-HD",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Produkttyp",
+                "values": [
+                  {
+                    "value": "LCD TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Display Technologie",
+                "values": [
+                  {
+                    "value": "LCD",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "HDR Typ",
+                "values": [
+                  {
+                    "value": "HDR10",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bild",
+            "features": [
+              {
+                "name": "Dynamisches Kontrastverhältnis",
+                "values": [
+                  {
+                    "value": "5000:1",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "High Dynamic Range (HDR)",
+                "values": [
+                  {
+                    "value": "HDR 10",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "LED-Technologie",
+                "values": [
+                  {
+                    "value": "D-LED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Helligkeit",
+                "values": [
+                  {
+                    "value": "200",
+                    "unit": "cd/m²"
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung",
+                "values": [
+                  {
+                    "value": "1920x1080 Pixel",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Native Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "50",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Kontrastverhältnis",
+                "values": [
+                  {
+                    "value": "5000:1",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildverbesserungssystem",
+                "values": [
+                  {
+                    "value": "HDR10, HLG",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Empfang",
+            "features": [
+              {
+                "name": "DVB-T",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-S2",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-T2 HD",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-C",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-T2 (H.264)",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Empfangsarten",
+                "values": [
+                  {
+                    "value": "DVB-T2 HD, DVB-C, DVB-C2, DVB-S, DVB-S2",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-C2",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-S",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ausstattung",
+            "features": [
+              {
+                "name": "Elektronische Programmzeitschrift (EPG)",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Sprachsteuerung",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Smart remote",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Kindersicherung",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Besondere Merkmale",
+                "values": [
+                  {
+                    "value": "Triple Tuner, Einschlafautomatiok",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "App-steuerbar",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "CI+ zertifiziert",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Streamingdienste",
+                "values": [
+                  {
+                    "value": "Amazon Prime Video",
+                    "unit": null
+                  },
+                  {
+                    "value": "Netflix",
+                    "unit": null
+                  },
+                  {
+                    "value": "YouTube",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Chromecast built-in",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Menü Sprachen",
+                "values": [
+                  {
+                    "value": "Mehrsprachige Menüführung",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmform",
+                "values": [
+                  {
+                    "value": "Flat",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "integrierte Webcam",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ton",
+            "features": [
+              {
+                "name": "Audiofunktionen",
+                "values": [
+                  {
+                    "value": "Dolby Digital Plus",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Musikleistung",
+                "values": [
+                  {
+                    "value": "2x 8 Watt",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Anschlüsse + Verbindungen",
+            "features": [
+              {
+                "name": "Bluetooth",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "USB Version",
+                "values": [
+                  {
+                    "value": "USB 2.0",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "kompatibel mit Sprachassistent",
+                "values": [
+                  {
+                    "value": "Google Assistant",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Internetfähig",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl USB Anschlüsse",
+                "values": [
+                  {
+                    "value": "2",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anschlüsse",
+                "values": [
+                  {
+                    "value": "3x HDMI, 2x USB 2.0, CI+, LAN, Digitaler Audioausgang, Kopfhöreranschluss, mini AV IN, CI+, Wifi, RF ",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl HDMI Anschlüsse",
+                "values": [
+                  {
+                    "value": "3",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "WLAN",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Allgemeine Merkmale",
+            "features": [
+              {
+                "name": "Gewicht mit Standfuß",
+                "values": [
+                  {
+                    "value": "5.2",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Hersteller Artikelnummer",
+                "values": [
+                  {
+                    "value": "202349",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Packmaße (BxHxT) (cm)",
+                "values": [
+                  {
+                    "value": "12.5 cm / 57.5 cm / 99 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Herstellergarantie",
+                "values": [
+                  {
+                    "value": "2",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Smart Home Bereich",
+                "values": [
+                  {
+                    "value": "Smart TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen mit Standfuß (B/H/T)",
+                "values": [
+                  {
+                    "value": "892.3 mm / 211.8 mm / 557.2 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Breite mit Standfuß",
+                "values": [
+                  {
+                    "value": "892.3",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht mit Verpackung (Brutto)",
+                "values": [
+                  {
+                    "value": "7.525",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht ohne Standfuß",
+                "values": [
+                  {
+                    "value": "5.0",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Breite ohne Standfuß",
+                "values": [
+                  {
+                    "value": "892.3",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (normiert)",
+                "values": [
+                  {
+                    "value": "Schwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Farbe Standfuss",
+                "values": [
+                  {
+                    "value": "Schwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "86.7",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Lieferumfang",
+                "values": [
+                  {
+                    "value": "1x LCD Fernseher, 1x Sprachfernbedienung, 2x Batterien, Bedienungsanleitung",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe mit Standfuß",
+                "values": [
+                  {
+                    "value": "557.2",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Breite Verpackung",
+                "values": [
+                  {
+                    "value": "12.5",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Höhe Verpackung",
+                "values": [
+                  {
+                    "value": "57.5",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe Verpackung",
+                "values": [
+                  {
+                    "value": "99",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Gurtmaß Verpackung",
+                "values": [
+                  {
+                    "value": "239 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe mit Standfuß",
+                "values": [
+                  {
+                    "value": "211.8",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (laut Hersteller)",
+                "values": [
+                  {
+                    "value": "Schwarz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "512.8",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Rechtliche Hinweise",
+                "values": [
+                  {
+                    "value": "Um diesen Fernseher verwenden zu können, müssen Sie den Nutzungsbedingungen und den Datenschutzrichtlinien von Google zustimmen. Google, Google Play, Android, Android TV™ und andere Marken sind Marken von Google Inc. Netzwerkdienste, Inhalte, das Betriebssystem und die Betriebssoftware dieses Produkts können unterschiedlichen Geschäftsbedingungen unterliegen und jederzeit geändert, unterbrochen oder eingestellt werden. Außerdem können Gebühren anfallen, oder eine Registrierung bzw. Ihre Kreditkarteninformationen sind erforderlich.",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "VESA Norm",
+                "values": [
+                  {
+                    "value": "200 x 200",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Update Richtlinie",
+            "features": [
+              {
+                "name": "Herstellerunterstützte Software updates",
+                "values": [
+                  {
+                    "value": "Unbekannt",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelljahr",
+                "values": [
+                  {
+                    "value": "2023",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Energieverbrauchsangaben (EU 2017/1369)",
+            "features": [
+              {
+                "name": "EU Energy Efficiency Scale (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "A-G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Verfügbarkeit von Ersatzteilen",
+                "values": [
+                  {
+                    "value": "7",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Produktunterstützung",
+                "values": [
+                  {
+                    "value": "8",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse Color Code (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "RGB - 236 102 8",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (SDR)",
+                "values": [
+                  {
+                    "value": "39",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (HDR)",
+                "values": [
+                  {
+                    "value": "F",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelkennung",
+                "values": [
+                  {
+                    "value": "OTV 40GF-5023C",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "F",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm)",
+                "values": [
+                  {
+                    "value": "100",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Min. garantierte Verfügbarkeit von Software- und Firmware-Aktualisierungen",
+                "values": [
+                  {
+                    "value": "8",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Art der Stromversorgung (Netzteil)",
+                "values": [
+                  {
+                    "value": "Intern",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (Zoll)",
+                "values": [
+                  {
+                    "value": "40",
+                    "unit": "Zoll"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Bereitschaftszustand",
+                "values": [
+                  {
+                    "value": "0.5",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von SDR-Inhalten",
+                "values": [
+                  {
+                    "value": "39",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme im vernetzten Bereitschaftsbetrieb",
+                "values": [
+                  {
+                    "value": "0.5",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (HDR)",
+                "values": [
+                  {
+                    "value": "39",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung (Pixel)",
+                "values": [
+                  {
+                    "value": "1.920 x 1.080 ",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Art des elektronischen Displays",
+                "values": [
+                  {
+                    "value": "Fernsehgerät",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Seitenverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von HDR-Inhalten",
+                "values": [
+                  {
+                    "value": "39",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Verwendete Panel Technologie",
+                "values": [
+                  {
+                    "value": "LED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Automatische Helligkeitsregelung (ABC) vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Sichtbare Bildschirmfläche",
+                "values": [
+                  {
+                    "value": "42",
+                    "unit": "dm²"
+                  }
+                ]
+              },
+              {
+                "name": "Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "60",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Spracherkennungssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anwesenheitssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Nachhaltigkeit",
+            "features": [
+              {
+                "name": "BetterWay. Erfüllt die Kriterien von",
+                "values": [
+                  {
+                    "value": "",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "onlineReviews": {
+          "averageRating": 4.181818181818182,
+          "entries": {
+            "amount": 11
+          }
+        }
+      },
+      {
+        "assets": {
+          "images": [
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324703"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92299300"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92299430"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92299516"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92299632"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324718"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324731"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324737"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324750"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324767"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324786"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324802"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324811"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324945"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324982"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324998"
+            },
+            {
+              "url": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92325019"
+            }
+          ]
+        },
+        "availabilities": {
+          "online": {
+            "amount": 70,
+            "fulfillmentTime": {
+              "notAfter": "2023-09-12",
+              "notBefore": "2023-09-08"
+            }
+          },
+          "store": null
+        },
+        "customerFriendlyName": "LG OLED48C27LA OLED TV (Flat, 48 Zoll / 121 cm, UHD 4K, SMART TV, webOS 22 mit LG ThinQ)",
+        "prices": {
+          "displaySalesPrice": {
+            "value": 888,
+            "currency": "EUR"
+          }
+        },
+        "featureGroups": [
+          {
+            "name": "Technische Merkmale",
+            "features": [
+              {
+                "name": "3D",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "SMART TV",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm/Zoll)",
+                "values": [
+                  {
+                    "value": "121 cm / 48 Zoll",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Betriebssystem",
+                "values": [
+                  {
+                    "value": "webOS 22 mit LG ThinQ",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen ohne Standfuß (BxHxT)",
+                "values": [
+                  {
+                    "value": "1071 mm / 618 mm / 46.9 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Prozessor",
+                "values": [
+                  {
+                    "value": "Alpha9 Gen5 AI Processor 4K",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildqualität",
+                "values": [
+                  {
+                    "value": "UHD 4K",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Produkttyp",
+                "values": [
+                  {
+                    "value": "OLED TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Display Technologie",
+                "values": [
+                  {
+                    "value": "OLED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "HDR Typ",
+                "values": [
+                  {
+                    "value": "Dolby Vision",
+                    "unit": null
+                  },
+                  {
+                    "value": "HDR10",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bild",
+            "features": [
+              {
+                "name": "USB-Recording",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildwiederholungsfrequenz",
+                "values": [
+                  {
+                    "value": "120 Hz",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "High Dynamic Range (HDR)",
+                "values": [
+                  {
+                    "value": "Cinema HDR (Dolby Vision IQ™, HDR10 Pro und HLG)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung",
+                "values": [
+                  {
+                    "value": "3.840 x 2.160 Pixel",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Native Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "120",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Bildverbesserungssystem",
+                "values": [
+                  {
+                    "value": "Cinema HDR mit Dolby Vision IQ, HDR10 Pro und HLG, AI Picture Pro, AI Brightness Control, Filmmaker Mode, HDR Dynamic Tone Mapping Pro, AI Upscaling, Autocal Fähig (Calman) mit Zugriff auf LUT-Niveau",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Empfang",
+            "features": [
+              {
+                "name": "DVB-T",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-S2",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-T2 HD",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Integrierter Satelliten Receiver",
+                "values": [
+                  {
+                    "value": "Twin Triple Tuner (DVB-T2/-C/-S2)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-C",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Empfangsarten",
+                "values": [
+                  {
+                    "value": "DVB-T2 HD, DVB-C, DVB-S, DVB-S2",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "DVB-S",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ausstattung",
+            "features": [
+              {
+                "name": "DVD-Player",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Elektronische Programmzeitschrift (EPG)",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Autokalibrierung",
+                "values": [
+                  {
+                    "value": "Calman Ready",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Automatische Senderprogrammierung",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Smart remote",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Besondere Merkmale",
+                "values": [
+                  {
+                    "value": "Selbstleuchtende Bildpunkte und pixelgenaues Dimming, Alpha9 Gen5 AI Processor 4K mit AI Picture Pro und AI Sound Pro, Cinema HDR mit Dolby Vision IQ, HDR10 Pro und HLG, Dolby Atmos-fähiges 2.2-Soundsystem mit 40W, Twin Triple Tuner (DVB-T2/-C/-S2) mit Watch & Record, Unterstützt AMD FreeSync und Nvidia G-Sync für flüssiges Gameplay ohne Tearing, Dank Gameoptimizer optimale Unterstützung von VRR / ALLM / GameGenre, Unterstützt HGiG für überzeugende HDR-Darstellung, webOS 22 mit LG ThinQ, LG Magic Remote-Fernbedienung MR22GN (NFC) im Lieferumfang enthalten, Google Assistant integriert, Amazon Alexa integriert, Kompatibel zu Apple AirPlay 2 und Apple HomeKit, Home Dashboard für komfortable Bedienung aller angeschlossenen Geräte",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "App-steuerbar",
+                "values": [
+                  {
+                    "value": "Ja, notwendiges Sonderzubehör nicht im Lieferumfang enthalten",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "CI+ zertifiziert",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "HD+ Karte inklusive",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Menü Sprachen",
+                "values": [
+                  {
+                    "value": "Deutsch, Englisch und 35 weitere Sprachen",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmform",
+                "values": [
+                  {
+                    "value": "Flat",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Eco Mode",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "integrierte Webcam",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ton",
+            "features": [
+              {
+                "name": "Musikleistung",
+                "values": [
+                  {
+                    "value": "40 Watt",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Klangeffekte",
+                "values": [
+                  {
+                    "value": "AI Sound Pro mit 7.1.2-Upmixing, Dolby Atmos-fähig",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Klangsystem",
+                "values": [
+                  {
+                    "value": "2.2 Soundsystem",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Anschlüsse + Verbindungen",
+            "features": [
+              {
+                "name": "Bluetooth",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "kompatibel mit Sprachassistent",
+                "values": [
+                  {
+                    "value": "Amazon Alexa",
+                    "unit": null
+                  },
+                  {
+                    "value": "Apple HomeKit",
+                    "unit": null
+                  },
+                  {
+                    "value": "Google Assistant",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Internetfähig",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl USB Anschlüsse",
+                "values": [
+                  {
+                    "value": "3",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anschlüsse",
+                "values": [
+                  {
+                    "value": "4x HDMI 2.1 (mit eARC und LG SIMPLINK), 3x USB, 1x LAN (Ethernet), 1x Optischer Digitalausgang (S/PDIF, Lichtwellenleiter), 1x Kopfhörer/Line Out (3,5 mm Klinke), 1x CI+-Slot",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Internetfunktionen",
+                "values": [
+                  {
+                    "value": "webOS 22 Smart TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anzahl HDMI Anschlüsse",
+                "values": [
+                  {
+                    "value": "4",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Vorhandene Steckplätze",
+                "values": [
+                  {
+                    "value": "CI+",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "WLAN",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Allgemeine Merkmale",
+            "features": [
+              {
+                "name": "Gewicht mit Standfuß",
+                "values": [
+                  {
+                    "value": "18.0",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Hersteller Artikelnummer",
+                "values": [
+                  {
+                    "value": "OLED48C27LA.AEU",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Packmaße (BxHxT) (cm)",
+                "values": [
+                  {
+                    "value": "122.0 cm / 74.5 cm / 20.3 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "System oder kompatibel mit System",
+                "values": [
+                  {
+                    "value": "Bluetooth, WLAN, LAN",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Smart Home Bereich",
+                "values": [
+                  {
+                    "value": "Smart TV",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Abmessungen mit Standfuß (B/H/T)",
+                "values": [
+                  {
+                    "value": "1071 mm / 650 mm / 251 mm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Reihe",
+                "values": [
+                  {
+                    "value": "C27",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Breite mit Standfuß",
+                "values": [
+                  {
+                    "value": "1071",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht mit Verpackung (Brutto)",
+                "values": [
+                  {
+                    "value": "20.6",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Gewicht ohne Standfuß",
+                "values": [
+                  {
+                    "value": "14.9",
+                    "unit": "kg"
+                  }
+                ]
+              },
+              {
+                "name": "Breite ohne Standfuß",
+                "values": [
+                  {
+                    "value": "1071",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (normiert)",
+                "values": [
+                  {
+                    "value": "Nicht verfügbar",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Farbe Standfuss",
+                "values": [
+                  {
+                    "value": "Anthrazit",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "46.9",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Lieferumfang",
+                "values": [
+                  {
+                    "value": "OLED48C27LA, LG Magic Remote-Fernbedienung MR22GN (NFC), Batterien für die Fernbedienung (2x AA), Schnellstartanleitung, Stromkabel, Standfuß/Standfüße (abhängig vom Designtyp des jeweiligen TV-Modells)",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe mit Standfuß",
+                "values": [
+                  {
+                    "value": "251",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Breite Verpackung",
+                "values": [
+                  {
+                    "value": "122.0",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Höhe Verpackung",
+                "values": [
+                  {
+                    "value": "74.5",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Tiefe Verpackung",
+                "values": [
+                  {
+                    "value": "20.3",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Gurtmaß Verpackung",
+                "values": [
+                  {
+                    "value": "311.6 cm",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe mit Standfuß",
+                "values": [
+                  {
+                    "value": "650",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "Farbe (laut Hersteller)",
+                "values": [
+                  {
+                    "value": "Anthrazit",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Höhe ohne Standfuß",
+                "values": [
+                  {
+                    "value": "618",
+                    "unit": "mm"
+                  }
+                ]
+              },
+              {
+                "name": "VESA Norm",
+                "values": [
+                  {
+                    "value": "300 x 200",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Update Richtlinie",
+            "features": [
+              {
+                "name": "Min. Laufzeit Software Updates",
+                "values": [
+                  {
+                    "value": "8",
+                    "unit": "Jahr/e"
+                  }
+                ]
+              },
+              {
+                "name": "Herstellerunterstützte Software updates",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Produkt Einführungsdatum",
+                "values": [
+                  {
+                    "value": "2022-03-01",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelljahr",
+                "values": [
+                  {
+                    "value": "2022",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Energieverbrauchsangaben (EU 2017/1369)",
+            "features": [
+              {
+                "name": "EU Energy Efficiency Scale (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "A-G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse Color Code (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "RGB - 227 6 19",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (SDR)",
+                "values": [
+                  {
+                    "value": "65.9",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (HDR)",
+                "values": [
+                  {
+                    "value": "G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Modelkennung",
+                "values": [
+                  {
+                    "value": "OLED48C27LA",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieeffizienzklasse (EU 2017/1369)",
+                "values": [
+                  {
+                    "value": "G",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (cm)",
+                "values": [
+                  {
+                    "value": "121",
+                    "unit": "cm"
+                  }
+                ]
+              },
+              {
+                "name": "Art der Stromversorgung (Netzteil)",
+                "values": [
+                  {
+                    "value": "Intern",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmdiagonale (Zoll)",
+                "values": [
+                  {
+                    "value": "48",
+                    "unit": "Zoll"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Bereitschaftszustand",
+                "values": [
+                  {
+                    "value": "0.5",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von SDR-Inhalten",
+                "values": [
+                  {
+                    "value": "66",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme im vernetzten Bereitschaftsbetrieb",
+                "values": [
+                  {
+                    "value": "2.0",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Leistungsaufnahme in Ein-Zustand (HDR)",
+                "values": [
+                  {
+                    "value": "120",
+                    "unit": "Watt"
+                  }
+                ]
+              },
+              {
+                "name": "Bildschirmauflösung (Pixel)",
+                "values": [
+                  {
+                    "value": "3.840 x 2.160",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Art des elektronischen Displays",
+                "values": [
+                  {
+                    "value": "Fernsehgerät",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Seitenverhältnis",
+                "values": [
+                  {
+                    "value": "16:9",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Energieverbrauch im Ein-Zustand in kWh pro 1 000 h bei der Wiedergabe von HDR-Inhalten",
+                "values": [
+                  {
+                    "value": "120",
+                    "unit": "kWh"
+                  }
+                ]
+              },
+              {
+                "name": "Verwendete Panel Technologie",
+                "values": [
+                  {
+                    "value": "OLED",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Automatische Helligkeitsregelung (ABC) vorhanden",
+                "values": [
+                  {
+                    "value": "Ja",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Sichtbare Bildschirmfläche",
+                "values": [
+                  {
+                    "value": "62.3",
+                    "unit": "dm²"
+                  }
+                ]
+              },
+              {
+                "name": "Bildwiederholfrequenz",
+                "values": [
+                  {
+                    "value": "120",
+                    "unit": "Hz"
+                  }
+                ]
+              },
+              {
+                "name": "Spracherkennungssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              },
+              {
+                "name": "Anwesenheitssensor vorhanden",
+                "values": [
+                  {
+                    "value": "Nein",
+                    "unit": null
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "onlineReviews": {
+          "averageRating": 4.462962962962963,
+          "entries": {
+            "amount": 54
+          }
+        }
+      }
+    ]
+  }
+}
