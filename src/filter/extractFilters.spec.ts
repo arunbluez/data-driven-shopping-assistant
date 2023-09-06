@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
-import { extractFilters } from "./extractFilters";
-import { Product } from "../product/product";
+import { describe, it, expect } from "vitest"
+import { extractFilters } from "./extractFilters"
+import { Product } from "../product/product"
 
 describe("extractFilters", () => {
   describe("empty products", () => {
@@ -10,8 +10,8 @@ describe("extractFilters", () => {
           question: "Welche Displaytechnologie/n bevorzugen Sie?",
           values: [],
         },
-      });
-    });
+      })
+    })
 
     it("returns displayTechnology filter with all possible distinct values in the given products", () => {
       const given: readonly Product[] = [
@@ -19,14 +19,14 @@ describe("extractFilters", () => {
         createDummyProduct("LCD"),
         createDummyProduct("LCD"),
         createDummyProduct("QLED"),
-      ];
+      ]
 
-      const filters = extractFilters(given);
+      const filters = extractFilters(given)
 
-      expect(filters.displayTechnology.values).toEqual(["OLED", "LCD", "QLED"]);
-    });
-  });
-});
+      expect(filters.displayTechnology.values).toEqual(["OLED", "LCD", "QLED"])
+    })
+  })
+})
 
 export const createDummyProduct = (displayTechnology: string): Product => ({
   availabilities: {
@@ -39,6 +39,7 @@ export const createDummyProduct = (displayTechnology: string): Product => ({
       value: displayTechnology,
     },
   },
+  topFeatures: [],
   imageUrl: "foo",
   name: "Fake Product",
   price: {
@@ -49,4 +50,4 @@ export const createDummyProduct = (displayTechnology: string): Product => ({
     average: 5,
     count: 9001,
   },
-});
+})

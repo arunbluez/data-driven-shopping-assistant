@@ -1,25 +1,25 @@
-import { describe, it, expect } from "vitest";
-import type { Product } from "./product";
-import { fetchProducts } from "./fetchProducts";
+import { describe, it, expect } from "vitest"
+import type { Product } from "./product"
+import { fetchProducts } from "./fetchProducts"
 
 describe("fetchProducts", () => {
-  const products = fetchProducts();
+  const products = fetchProducts()
 
   it("contains all products", () => {
-    expect(products).toHaveLength(3);
-  });
+    expect(products).toHaveLength(3)
+  })
 
   it.each(expectedProducts)(
     "contains well formed product $id",
     ({ expectedProduct }) => {
-      expect(products).toContainEqual(expectedProduct);
+      expect(products).toContainEqual(expectedProduct)
     }
-  );
-});
+  )
+})
 
 const expectedProducts: Array<{
-  id: string;
-  expectedProduct: Product;
+  id: string
+  expectedProduct: Product
 }> = [
   {
     id: "2863142",
@@ -44,6 +44,24 @@ const expectedProducts: Array<{
           value: "LED",
         },
       },
+      topFeatures: [
+        {
+          name: "SMART TV",
+          value: "Ja",
+        },
+        {
+          name: "Bildschirmdiagonale (cm/Zoll)",
+          value: "138 cm / 55 Zoll",
+        },
+        {
+          name: "Betriebssystem",
+          value: "Tizen",
+        },
+        {
+          name: "Abmessungen ohne Standfuß (BxHxT)",
+          value: "1230.5 mm / 707.2 mm / 59.9 mm",
+        },
+      ],
     },
   },
   {
@@ -69,6 +87,24 @@ const expectedProducts: Array<{
           value: "LED",
         },
       },
+      topFeatures: [
+        {
+          name: "SMART TV",
+          value: "Ja",
+        },
+        {
+          name: "Bildschirmdiagonale (cm/Zoll)",
+          value: "100 cm / 40 Zoll",
+        },
+        {
+          name: "Betriebssystem",
+          value: "Google TV",
+        },
+        {
+          name: "Abmessungen ohne Standfuß (BxHxT)",
+          value: "892.3 mm / 512.8 mm / 86.7 mm",
+        },
+      ],
     },
   },
   {
@@ -94,6 +130,24 @@ const expectedProducts: Array<{
           value: "OLED",
         },
       },
+      topFeatures: [
+        {
+          name: "SMART TV",
+          value: "Ja",
+        },
+        {
+          name: "Bildschirmdiagonale (cm/Zoll)",
+          value: "100 cm / 40 Zoll",
+        },
+        {
+          name: "Betriebssystem",
+          value: "Google TV",
+        },
+        {
+          name: "Abmessungen ohne Standfuß (BxHxT)",
+          value: "892.3 mm / 512.8 mm / 86.7 mm",
+        },
+      ],
     },
   },
-];
+]
