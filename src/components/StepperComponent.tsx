@@ -5,15 +5,17 @@ import Step from "@mui/material/Step"
 import StepLabel from "@mui/material/StepLabel"
 import Button from "@mui/material/Button"
 import Typography from "@mui/material/Typography"
+import StepWrapper from "./StepWrapper"
 
 const steps = ["Select campaign settings", "Create an ad group", "Create an ad"]
+const optionalSteps = [1]
 
 export default function StepperComponent() {
   const [activeStep, setActiveStep] = React.useState(0)
   const [skipped, setSkipped] = React.useState(new Set<number>())
 
   const isStepOptional = (step: number) => {
-    return step === 1
+    return optionalSteps.includes(step)
   }
 
   const isStepSkipped = (step: number) => {
@@ -62,17 +64,17 @@ export default function StepperComponent() {
           const labelProps: {
             optional?: React.ReactNode
           } = {}
-          if (isStepOptional(index)) {
-            labelProps.optional = (
-              <Typography variant="caption">Optional</Typography>
-            )
-          }
+          // if (isStepOptional(index)) {
+          //   labelProps.optional = (
+          //     <Typography variant="caption">Optional</Typography>
+          //   )
+          // }
           if (isStepSkipped(index)) {
             stepProps.completed = false
           }
           return (
             <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
+              <StepLabel {...labelProps}></StepLabel>
             </Step>
           )
         })}
@@ -89,7 +91,7 @@ export default function StepperComponent() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+          <StepWrapper step={activeStep + 1} />
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button
               color="inherit"
