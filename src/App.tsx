@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material"
 import "./App.css"
-import NavBar from "./components/NavBar"
 import StepperComponent from "./components/StepperComponent"
+import NavBar from "./components/NavBar"
 
 function App() {
   const theme = createTheme({
@@ -13,12 +13,6 @@ function App() {
   })
 
   return (
-<<<<<<< Updated upstream
-    <div className="mx-auto bg-white rounded-xl p-6">
-      <StepperComponent />
-    </div>
-  );
-=======
     <ThemeProvider theme={theme}>
       <NavBar />
       <div className="app">
@@ -28,7 +22,6 @@ function App() {
       </div>
     </ThemeProvider>
   )
->>>>>>> Stashed changes
 }
 
-export default App;
+export default App

@@ -1,8 +1,4 @@
-import React from "react"
-
-type Props = {}
-
-export default function ProductItem({}: Props) {
+export default function ProductItem() {
   return (
     <div className="w-full border border-gray-400 rounded-xl p-4">
       <div className="flex flex-col gap-2">
