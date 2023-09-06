@@ -1,7 +1,3 @@
-import React from "react"
-
-type Props = {}
-
-export default function StepperControl({}: Props) {
+export default function StepperControl() {
   return <div>StepperControl</div>
 }
