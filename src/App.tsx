@@ -6,7 +6,7 @@ function App() {
     <div className="mx-auto bg-white rounded-xl p-6">
       <StepperComponent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
