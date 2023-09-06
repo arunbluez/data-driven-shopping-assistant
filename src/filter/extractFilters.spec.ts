@@ -33,7 +33,12 @@ const createDummyProduct = (displayTechnology: string): Product => ({
     store: false,
     online: false,
   },
-  features: [{ name: "Displaytechnologie", value: displayTechnology }],
+  features: {
+    displayTechnology: {
+      name: "Displaytechnologie",
+      value: displayTechnology,
+    },
+  },
   imageUrl: "foo",
   name: "Fake Product",
   price: {

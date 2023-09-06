@@ -1,5 +1,5 @@
 import rawProductData from "../data/products/tvs-extended.json";
-import type { Feature, Product } from "./product";
+import type { Features, Product } from "./product";
 
 export const fetchProducts = (): readonly Product[] => {
   return rawProductData.data.products.map((value) => ({
@@ -29,13 +29,11 @@ const extractFeatures = (
     name: string;
     values: Array<{ value: string; unit: string }>;
   }>
-): Feature[] => {
-  return [
-    {
-      name: "Displaytechnologie",
-      value: features.filter(
-        (v) => v.name === "Verwendete Panel Technologie"
-      )[0].values[0].value,
-    },
-  ];
-};
+): Features => ({
+  displayTechnology: {
+    name: "Displaytechnologie",
+    // todo: unsafe
+    value: features.filter((v) => v.name === "Verwendete Panel Technologie")[0]
+      .values[0].value,
+  },
+});

@@ -38,12 +38,12 @@ const expectedProducts: Array<{
         average: 4.290322580645161,
         count: 31,
       },
-      features: [
-        {
+      features: {
+        displayTechnology: {
           name: "Displaytechnologie",
           value: "LED",
         },
-      ],
+      },
     },
   },
   {
@@ -63,12 +63,12 @@ const expectedProducts: Array<{
         average: 4.181818181818182,
         count: 11,
       },
-      features: [
-        {
+      features: {
+        displayTechnology: {
           name: "Displaytechnologie",
           value: "LED",
         },
-      ],
+      },
     },
   },
   {
@@ -88,12 +88,12 @@ const expectedProducts: Array<{
         average: 4.462962962962963,
         count: 54,
       },
-      features: [
-        {
+      features: {
+        displayTechnology: {
           name: "Displaytechnologie",
           value: "OLED",
         },
-      ],
+      },
     },
   },
 ];

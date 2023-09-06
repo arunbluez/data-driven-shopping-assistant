@@ -1,17 +1,11 @@
-import type { Product } from "../product/product";
-import { Filter, FilterType } from "./filter";
+import type { FeatureName, Product } from "../product/product";
+import { Filter } from "./filter";
 
 export const extractFilters = (
   data: readonly Product[]
-): Record<FilterType, Filter> => {
+): Record<FeatureName, Filter> => {
   const displayTechnologies = [
-    ...new Set(
-      data.map(
-        // todo: unsafe
-        (v) =>
-          v.features.filter((f) => f.name === "Displaytechnologie")[0].value
-      )
-    ),
+    ...new Set(data.map((v) => v.features.displayTechnology.value)),
   ];
   return {
     displayTechnology: {

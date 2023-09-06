@@ -3,7 +3,7 @@ export type Product = {
   imageUrl: string;
   reviews: ReviewData;
   price: Price;
-  features: readonly Feature[];
+  features: Features;
   availabilities: Availabilities;
 };
 
@@ -17,10 +17,12 @@ type ReviewData = {
   count: number;
 };
 
-export type FeatureName = "Displaytechnologie";
+export type FeatureName = "displayTechnology";
+
+export type Features = Record<FeatureName, Feature>;
 
 export type Feature = {
-  name: FeatureName;
+  name: string;
   value: string;
 };
 
