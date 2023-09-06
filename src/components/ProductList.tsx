@@ -1,11 +1,13 @@
+import { fetchProducts } from "../product/fetchProducts"
+import { Product } from "../product/product"
 import ProductItem from "./ProductItem"
 
 export default function ProductList() {
-  const list = [0, 1, 2, 3, 4]
+  const products = fetchProducts()
   return (
     <div className="flex flex-col gap-4">
-      {list.map((x: number) => (
-        <ProductItem key={x} />
+      {products.slice(0, 5).map((product: Product) => (
+        <ProductItem key={product.name} product={product} />
       ))}
     </div>
   )

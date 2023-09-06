@@ -1,51 +1,47 @@
 import { Rating } from "@mui/material"
 import EnergyLabel from "./EnergyLabel/EnergyLabel"
+import { Product } from "../product/product"
 
-export default function ProductItem() {
+type Props = {
+  product: Product
+}
+export default function ProductItem({ product }: Props) {
   return (
     <div className="w-full border border-gray-400 rounded-xl p-4">
       <div className="flex flex-col gap-2">
         <div className="flex justify-between items-center w-full">
-          <p className="font-bold">
-            SAMSUNG GU55CU7179 LED TV (Flat, 55 Zoll / 138 cm, UHD 4K, SMART TV,
-            Tizen)
-          </p>
+          <p className="font-bold">{product.name}</p>
           <EnergyLabel />
         </div>
         <div className="flex gap-4">
           <div className="flex flex-col justify-between w-1/3 p-4">
             <div className="w-full flex items-center justify-center">
-              <img
-                width="80%"
-                src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_105413335?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320"
-              />{" "}
+              <img width="80%" src={product.imageUrl} />{" "}
             </div>
             <div className="flex items-center gap-2">
-              <Rating name="read-only" value={4} readOnly color="primary" />
-              <p>35</p>
+              <Rating
+                name="read-only"
+                value={product.reviews.average}
+                precision={0.25}
+                readOnly
+                color="primary"
+              />
+              <p>{product.reviews.count}</p>
             </div>
           </div>
           <div className="flex flex-col gap-2 items-start justify-start p-4 w-1/3">
-            <div className="text-start">
-              <p className="text-sm">ProductType</p>
-              <p className="font-bold">LED TV</p>
-            </div>
-            <div className="text-start">
-              <p className="text-sm">ProductType</p>
-              <p className="font-bold">LED TV</p>
-            </div>
-            <div className="text-start">
-              <p className="text-sm">ProductType</p>
-              <p className="font-bold">LED TV</p>
-            </div>
-            <div className="text-start">
-              <p className="text-sm">ProductType</p>
-              <p className="font-bold">LED TV</p>
-            </div>
+            {product.topFeatures.map((feature) => (
+              <div className="text-start">
+                <p className="text-sm">{feature.name}</p>
+                <p className="font-bold">{feature.value}</p>
+              </div>
+            ))}
           </div>
           <div className="flex flex-col gap-4 items-start justify-start p-4">
             <div className="text-start">
-              <p className="text-3xl font-bold">519,-</p>
+              <p className="text-3xl font-bold">
+                {product.price.value.toFixed(0)},-
+              </p>
               <div className="text-xs text-start">
                 <p>inkl. MwSt. versandkostenfrei</p>
                 <p>
