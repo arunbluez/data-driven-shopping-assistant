@@ -1,5 +1,5 @@
 import { Checkbox, Radio } from "@mui/material"
-import React, { useState } from "react"
+import { useState } from "react"
 
 type Props = {
   choices: string[]
