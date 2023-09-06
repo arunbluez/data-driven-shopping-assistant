@@ -1,13 +1,28 @@
 import { describe, it, expect } from "vitest";
-import { fetchProducts } from "./product";
+import { Product, fetchProducts } from "./product";
 
 describe("fetchProducts", () => {
-  it("returns a list of well-formed products", () => {
-    // todo: expect our fix set of products in a well formed way.
-    const products = fetchProducts();
-    expect(products).toHaveLength(2);
+  const products = fetchProducts();
 
-    expect(products).toContainEqual({
+  it("contains all products", () => {
+    expect(products).toHaveLength(3);
+  });
+
+  it.each(expectedProducts)(
+    "contains well formed product $id",
+    ({ expectedProduct }) => {
+      expect(products).toContainEqual(expectedProduct);
+    }
+  );
+});
+
+const expectedProducts: Array<{
+  id: string;
+  expectedProduct: Product;
+}> = [
+  {
+    id: "2863142",
+    expectedProduct: {
       availabilities: {
         online: true,
         store: false,
@@ -28,9 +43,11 @@ describe("fetchProducts", () => {
           value: "LED",
         },
       ],
-    });
-
-    expect(products).toContainEqual({
+    },
+  },
+  {
+    id: "2851393",
+    expectedProduct: {
       availabilities: {
         online: true,
         store: false,
@@ -51,6 +68,31 @@ describe("fetchProducts", () => {
           value: "LED",
         },
       ],
-    });
-  });
-});
+    },
+  },
+  {
+    id: "2788190",
+    expectedProduct: {
+      availabilities: {
+        online: true,
+        store: false,
+      },
+      imageUrl: "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92324703",
+      price: {
+        value: 888,
+        currency: "EUR",
+      },
+      name: "LG OLED48C27LA OLED TV (Flat, 48 Zoll / 121 cm, UHD 4K, SMART TV, webOS 22 mit LG ThinQ)",
+      reviews: {
+        average: 4.462962962962963,
+        count: 54,
+      },
+      features: [
+        {
+          name: "Displaytechnologie",
+          value: "OLED",
+        },
+      ],
+    },
+  },
+];
