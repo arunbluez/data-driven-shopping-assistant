@@ -19,7 +19,7 @@ type ReviewData = {
   count: number;
 };
 
-type FeatureName = "Displaytechnologie";
+export type FeatureName = "Displaytechnologie";
 
 type Feature = {
   name: FeatureName;
