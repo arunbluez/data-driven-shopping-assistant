@@ -19,10 +19,10 @@ describe("extractFilters", () => {
 
     it("returns displayTechnology filter with all possible distinct values in the given products", () => {
       const given: readonly Product[] = [
-        createDummyProduct("OLED"),
-        createDummyProduct("LCD"),
-        createDummyProduct("LCD"),
-        createDummyProduct("QLED"),
+        createDummyProduct("OLED", "40"),
+        createDummyProduct("LCD", "50"),
+        createDummyProduct("LCD", "42"),
+        createDummyProduct("QLED", "50"),
       ];
 
       const filters = extractFilters(given);
@@ -32,7 +32,10 @@ describe("extractFilters", () => {
   });
 });
 
-export const createDummyProduct = (displayTechnology: string): Product => ({
+export const createDummyProduct = (
+  displayTechnology: string,
+  displaySize: string
+): Product => ({
   availabilities: {
     store: false,
     online: false,
@@ -44,7 +47,7 @@ export const createDummyProduct = (displayTechnology: string): Product => ({
     },
     displaySize: {
       name: "Bildschirmdiagonale (Zoll)",
-      value: "55",
+      value: displaySize,
     },
   },
   topFeatures: [],
