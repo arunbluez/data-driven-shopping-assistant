@@ -10,14 +10,21 @@ export const extractFilters = (
   const displaySizes = [
     ...new Set(data.map((v) => v.features.displaySize.value)),
   ];
+  const displayResolutions = [
+    ...new Set(data.map((v) => v.features.displayResolution.value)),
+  ];
   return {
     displayTechnology: {
       question: "Welche Displaytechnologie/n bevorzugen Sie?",
       values: displayTechnologies,
     },
     displaySize: {
-      question: "Welche Bildschirmgröße bevorzugen Sie?",
+      question: "Welche Bildschirmgröße/n bevorzugen Sie?",
       values: displaySizes,
+    },
+    displayResolution: {
+      question: "Welche Bildschirmauflösung/en bevorzugen Sie?",
+      values: displayResolutions,
     },
   };
 };

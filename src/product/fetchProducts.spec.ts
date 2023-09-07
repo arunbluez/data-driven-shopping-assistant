@@ -47,6 +47,10 @@ const expectedProducts: Array<{
           name: "Displaytechnologie",
           value: "LED",
         },
+        displayResolution: {
+          name: "Bildschirmauflösung (Pixel)",
+          value: "3.840 x 2.160",
+        },
       },
       topFeatures: [
         {
@@ -94,6 +98,10 @@ const expectedProducts: Array<{
           name: "Displaytechnologie",
           value: "LED",
         },
+        displayResolution: {
+          name: "Bildschirmauflösung (Pixel)",
+          value: "1.920 x 1.080",
+        },
       },
       topFeatures: [
         {
@@ -140,6 +148,10 @@ const expectedProducts: Array<{
         displayTechnology: {
           name: "Displaytechnologie",
           value: "OLED",
+        },
+        displayResolution: {
+          name: "Bildschirmgröße (Pixel)",
+          value: "3.840 x 2.160",
         },
       },
       topFeatures: [

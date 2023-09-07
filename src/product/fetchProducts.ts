@@ -38,12 +38,20 @@ const extractFeatures = (
   displayTechnology: {
     name: "Displaytechnologie",
     // todo: unsafe
-    value: features.filter((v) => v.name === "Verwendete Panel Technologie")[0]
-      .values[0].value,
+    value: features
+      .filter((v) => v.name === "Verwendete Panel Technologie")[0]
+      .values[0].value.trim(),
   },
   displaySize: {
     name: "Bildschirmdiagonale (Zoll)",
-    value: features.filter((v) => v.name === "Bildschirmdiagonale (Zoll)")[0]
-      .values[0].value,
+    value: features
+      .filter((v) => v.name === "Bildschirmdiagonale (Zoll)")[0]
+      .values[0].value.trim(),
+  },
+  displayResolution: {
+    name: "Bildschirmauflösung (Pixel)",
+    value: features
+      .filter((v) => v.name === "Bildschirmauflösung (Pixel)")[0]
+      .values[0].value.trim(),
   },
 });

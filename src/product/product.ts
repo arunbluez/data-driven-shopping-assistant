@@ -18,7 +18,10 @@ type ReviewData = {
   count: number;
 };
 
-export type FeatureName = "displayTechnology" | "displaySize";
+export type FeatureName =
+  | "displayTechnology"
+  | "displaySize"
+  | "displayResolution";
 
 export type Features = Record<FeatureName, Feature>;
 

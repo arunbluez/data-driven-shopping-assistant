@@ -11,7 +11,11 @@ describe("extractFilters", () => {
           values: [],
         },
         displaySize: {
-          question: "Welche Bildschirmgröße bevorzugen Sie?",
+          question: "Welche Bildschirmgröße/n bevorzugen Sie?",
+          values: [],
+        },
+        displayResolution: {
+          question: "Welche Bildschirmauflösung/en bevorzugen Sie?",
           values: [],
         },
       });
@@ -19,10 +23,10 @@ describe("extractFilters", () => {
 
     it("returns displayTechnology filter with all possible distinct values in the given products", () => {
       const given: readonly Product[] = [
-        createDummyProduct("OLED", "40"),
-        createDummyProduct("LCD", "50"),
-        createDummyProduct("LCD", "42"),
-        createDummyProduct("QLED", "50"),
+        createDummyProduct("OLED", "40", "1920 x 1080"),
+        createDummyProduct("LCD", "50", "1920 x 1080"),
+        createDummyProduct("LCD", "42", "1920 x 1080"),
+        createDummyProduct("QLED", "50", "1920 x 1080"),
       ];
 
       const filters = extractFilters(given);
@@ -34,7 +38,8 @@ describe("extractFilters", () => {
 
 export const createDummyProduct = (
   displayTechnology: string,
-  displaySize: string
+  displaySize: string,
+  displayResolution: string
 ): Product => ({
   availabilities: {
     store: false,
@@ -48,6 +53,10 @@ export const createDummyProduct = (
     displaySize: {
       name: "Bildschirmdiagonale (Zoll)",
       value: displaySize,
+    },
+    displayResolution: {
+      name: "Bildschirmauflösung (Pixel)",
+      value: displayResolution,
     },
   },
   topFeatures: [],
