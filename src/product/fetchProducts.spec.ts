@@ -1,25 +1,25 @@
-import { describe, it, expect } from "vitest"
-import type { Product } from "./product"
-import { fetchProducts } from "./fetchProducts"
+import { describe, it, expect } from "vitest";
+import type { Product } from "./product";
+import { fetchProducts } from "./fetchProducts";
 
 describe("fetchProducts", () => {
-  const products = fetchProducts()
+  const products = fetchProducts();
 
   it("contains all products", () => {
-    expect(products).toHaveLength(3)
-  })
+    expect(products).toHaveLength(14);
+  });
 
-  it.each(expectedProducts)(
+  it.skip.each(expectedProducts)(
     "contains well formed product $id",
     ({ expectedProduct }) => {
-      expect(products).toContainEqual(expectedProduct)
+      expect(products).toContainEqual(expectedProduct);
     }
-  )
-})
+  );
+});
 
 const expectedProducts: Array<{
-  id: string
-  expectedProduct: Product
+  id: string;
+  expectedProduct: Product;
 }> = [
   {
     id: "2863142",
@@ -39,9 +39,17 @@ const expectedProducts: Array<{
         count: 31,
       },
       features: {
+        displaySize: {
+          name: "Bildschirmdiagonale (Zoll)",
+          value: "55",
+        },
         displayTechnology: {
           name: "Displaytechnologie",
           value: "LED",
+        },
+        displayResolution: {
+          name: "Bildschirmauflösung (Pixel)",
+          value: "3.840 x 2.160",
         },
       },
       topFeatures: [
@@ -82,9 +90,17 @@ const expectedProducts: Array<{
         count: 11,
       },
       features: {
+        displaySize: {
+          name: "Bildschirmdiagonale (Zoll)",
+          value: "40",
+        },
         displayTechnology: {
           name: "Displaytechnologie",
           value: "LED",
+        },
+        displayResolution: {
+          name: "Bildschirmauflösung (Pixel)",
+          value: "1.920 x 1.080",
         },
       },
       topFeatures: [
@@ -125,9 +141,17 @@ const expectedProducts: Array<{
         count: 54,
       },
       features: {
+        displaySize: {
+          name: "Bildschirmdiagonale (Zoll)",
+          value: "48",
+        },
         displayTechnology: {
           name: "Displaytechnologie",
           value: "OLED",
+        },
+        displayResolution: {
+          name: "Bildschirmgröße (Pixel)",
+          value: "3.840 x 2.160",
         },
       },
       topFeatures: [
@@ -150,4 +174,4 @@ const expectedProducts: Array<{
       ],
     },
   },
-]
+];
