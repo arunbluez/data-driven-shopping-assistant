@@ -33,7 +33,7 @@
   top: 120px;
 }
 .energy-class span:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 100%;
@@ -55,25 +55,25 @@
   text-transform: uppercase;
 }
 .energy-class span.a:after {
-  content: " a ";
+  content: ' a ';
 }
 .energy-class span.b:after {
-  content: " b ";
+  content: ' b ';
 }
 .energy-class span.c:after {
-  content: " c ";
+  content: ' c ';
 }
 .energy-class span.d:after {
-  content: " d ";
+  content: ' d ';
 }
 .energy-class span.e:after {
-  content: " e ";
+  content: ' e ';
 }
 .energy-class span.f:after {
-  content: " f ";
+  content: ' f ';
 }
 .energy-class span.g:after {
-  content: " g ";
+  content: ' g ';
 }
 .energy-class div {
   position: relative;
@@ -81,7 +81,7 @@
   margin: 2px 0;
 }
 .energy-class div:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 100%;
@@ -110,7 +110,7 @@
   border-left: 8px solid #3b7634;
 }
 .energy-class div.a:after {
-  content: " a ";
+  content: ' a ';
 }
 .energy-class div.b {
   background: #5da436;
@@ -120,7 +120,7 @@
   border-left: 8px solid #5da436;
 }
 .energy-class div.b:after {
-  content: " b ";
+  content: ' b ';
 }
 .energy-class div.c {
   background: #a3cf2a;
@@ -130,7 +130,7 @@
   border-left: 8px solid #a3cf2a;
 }
 .energy-class div.c:after {
-  content: " c ";
+  content: ' c ';
 }
 .energy-class div.d {
   background: #f6df1b;
@@ -140,7 +140,7 @@
   border-left: 8px solid #f6df1b;
 }
 .energy-class div.d:after {
-  content: " d ";
+  content: ' d ';
 }
 .energy-class div.e {
   background: #f29020;
@@ -150,7 +150,7 @@
   border-left: 8px solid #f29020;
 }
 .energy-class div.e:after {
-  content: " e ";
+  content: ' e ';
 }
 .energy-class div.f {
   background: #eb422c;
@@ -160,7 +160,7 @@
   border-left: 8px solid #eb422c;
 }
 .energy-class div.f:after {
-  content: " f ";
+  content: ' f ';
 }
 .energy-class div.g {
   background: #ea2039;
@@ -170,5 +170,5 @@
   border-left: 8px solid #ea2039;
 }
 .energy-class div.g:after {
-  content: " g ";
+  content: ' g ';
 }
