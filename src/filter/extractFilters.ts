@@ -1,22 +1,22 @@
-import type { FeatureName, Product } from "../product/product"
-import { DisplayableFilter } from "./filter"
+import type { FeatureName, Product } from "../product/product";
+import { DisplayFilterValueType, DisplayableFilter } from "./filter";
 
 export type extractFilterReturnType = {
-  filterName: FeatureName
-  filters: DisplayableFilter
-}
+  filterName: FeatureName;
+  filters: DisplayableFilter;
+};
 export const extractFilters = (
   data: readonly Product[]
 ): extractFilterReturnType[] => {
   const displayTechnologies = [
     ...new Set(data.map((v) => v.features.displayTechnology.value)),
-  ]
+  ];
   const displaySizes = [
     ...new Set(data.map((v) => v.features.displaySize.value)),
-  ]
+  ];
   const displayResolutions = [
     ...new Set(data.map((v) => v.features.displayResolution.value)),
-  ]
+  ];
   return [
     {
       filterName: "displayTechnology",
@@ -48,5 +48,45 @@ export const extractFilters = (
         })),
       },
     },
-  ]
-}
+  ];
+};
+
+export const extractFilter = (
+  data: readonly Product[],
+  feature: FeatureName
+): extractFilterReturnType => {
+  const values = [
+    ...new Set(data.map((v) => v.features[feature].value)),
+  ].sort();
+  const labelFunction = (value: string): DisplayFilterValueType => {
+    if (feature === "displayResolution") {
+      return {
+        label: value.includes("3.840") ? "4K Display" : "2K Display",
+        value,
+      };
+    } else if (feature === "displaySize") {
+      return {
+        label: `${value} Zoll`,
+        value,
+      };
+    } else {
+      return {
+        label: value,
+        value,
+      };
+    }
+  };
+  return {
+    filterName: feature,
+    filters: {
+      question: featureToQuestion[feature],
+      values: values.map(labelFunction),
+    },
+  };
+};
+
+const featureToQuestion: Record<FeatureName, string> = {
+  displayResolution: "Welche Bildschirmauflösung/en bevorzugen Sie?",
+  displaySize: "Welche Bildschirmgröße/n bevorzugen Sie?",
+  displayTechnology: "Welche Displaytechnologie/n bevorzugen Sie?",
+};

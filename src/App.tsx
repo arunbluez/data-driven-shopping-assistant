@@ -1,25 +1,22 @@
-import { Avatar, Button, ThemeProvider, createTheme } from "@mui/material"
-import "./App.css"
-import StepperComponent from "./components/StepperComponent"
-import NavBar from "./components/NavBar"
-import ProductList from "./components/ProductList"
-import avatar from "./assets/avatar.png"
-import { useMemo, useState } from "react"
-import { fetchProducts } from "./product/fetchProducts"
-import { extractFilters } from "./filter/extractFilters"
-import { useBoundStore } from "./stores/store"
-import { applyFilters } from "./filter/applyFilters"
+import { Avatar, Button, ThemeProvider, createTheme } from "@mui/material";
+import "./App.css";
+import StepperComponent from "./components/StepperComponent";
+import NavBar from "./components/NavBar";
+import ProductList from "./components/ProductList";
+import avatar from "./assets/avatar.png";
+import { useState } from "react";
+import { useStore } from "./stores/store";
 
 function App() {
-  const [started, setStarted] = useState(false)
-  const products = fetchProducts()
-  const filters = extractFilters(products)
-
-  const selectedState = useBoundStore((state) => state.selectedState)
-
-  const filteredProducts = useMemo(() => {
-    return applyFilters(products, selectedState)
-  }, [selectedState, products])
+  const [started, setStarted] = useState(false);
+  const {
+    currentStep,
+    currentProducts,
+    addFilter,
+    filtersToApply,
+    removeFilter,
+    reset,
+  } = useStore();
 
   const theme = createTheme({
     palette: {
@@ -30,7 +27,7 @@ function App() {
         main: "rgb(0, 0, 0)",
       },
     },
-  })
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -56,7 +53,14 @@ function App() {
 
           <div className="bg-white rounded-2xl p-6 border border-gray-400 mb-8 ">
             {started ? (
-              <StepperComponent filters={filters} />
+              <StepperComponent
+                currentStep={currentStep}
+                addFilter={addFilter}
+                currentFilters={filtersToApply}
+                currentProducts={currentProducts}
+                resetState={reset}
+                removeFilter={removeFilter}
+              />
             ) : (
               <div className="flex flex-col items-start justify-between p-4 min-h-[300px]">
                 <p className="text-2xl md:text-6xl font-bold">
@@ -78,11 +82,11 @@ function App() {
               </div>
             )}
           </div>
-          <ProductList products={filteredProducts} />
+          <ProductList products={currentProducts} />
         </div>
       </div>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
