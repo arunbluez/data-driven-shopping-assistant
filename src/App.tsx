@@ -1,38 +1,41 @@
-import { Avatar, Button, ThemeProvider, createTheme } from '@mui/material';
-import './App.css';
-import StepperComponent from './components/StepperComponent';
-import NavBar from './components/NavBar';
-import ProductList from './components/ProductList';
-import avatar from './assets/avatar.png';
-import { useState } from 'react';
-import { fetchProducts } from './product/fetchProducts';
+import { Avatar, Button, ThemeProvider, createTheme } from "@mui/material"
+import "./App.css"
+import StepperComponent from "./components/StepperComponent"
+import NavBar from "./components/NavBar"
+import ProductList from "./components/ProductList"
+import avatar from "./assets/avatar.png"
+import { useState } from "react"
+import { fetchProducts } from "./product/fetchProducts"
+import { extractFilters } from "./filter/extractFilters"
 
 function App() {
-  const [started, setStarted] = useState(false);
-  const products = fetchProducts();
+  const [started, setStarted] = useState(false)
+  const products = fetchProducts()
+  const filters = extractFilters(products)
+  const filterArray = Object.values(filters)
   const theme = createTheme({
     palette: {
       primary: {
-        main: 'rgb(223, 0, 0)',
+        main: "rgb(223, 0, 0)",
       },
       secondary: {
-        main: 'rgb(0, 0, 0)',
+        main: "rgb(0, 0, 0)",
       },
     },
-  });
+  })
 
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
-      <div className='app'>
-        <div className='min-w-full lg:min-w-[960px] mx-auto '>
-          <div className='flex items-center gap-4'>
-            <Avatar alt='DDSA' src={avatar} sx={{ width: 120, height: 120 }} />
-            <div className='text-left my-8'>
-              <p className='text-4xl font-bold mb-2'>
+      <div className="app">
+        <div className="min-w-full lg:min-w-[960px] mx-auto ">
+          <div className="flex items-center gap-4">
+            <Avatar alt="DDSA" src={avatar} sx={{ width: 120, height: 120 }} />
+            <div className="text-left my-8">
+              <p className="text-4xl font-bold mb-2">
                 Data Driven Shopping Assistant
               </p>
-              <p className='font-light text-gray-600'>
+              <p className="font-light text-gray-600">
                 The idea is to have a customer data driven shopping journey
                 through a seris of questions/filters ( to understand the users
                 needs /requirements) which will recommend the user a list of N
@@ -43,20 +46,20 @@ function App() {
             </div>
           </div>
 
-          <div className='bg-white rounded-2xl p-6 border border-gray-400 mb-8 '>
+          <div className="bg-white rounded-2xl p-6 border border-gray-400 mb-8 ">
             {started ? (
-              <StepperComponent />
+              <StepperComponent filters={filterArray} />
             ) : (
-              <div className='flex flex-col items-start justify-between p-4 min-h-[300px]'>
-                <p className='text-6xl font-bold'>Interseted in buying a TV?</p>
-                <div className='flex items-center justify-between w-full'>
-                  <p className='text-4xl font-light text-red-500'>
+              <div className="flex flex-col items-start justify-between p-4 min-h-[300px]">
+                <p className="text-6xl font-bold">Interseted in buying a TV?</p>
+                <div className="flex items-center justify-between w-full">
+                  <p className="text-4xl font-light text-red-500">
                     Try our smart assistant
                   </p>
                   <Button
-                    variant='contained'
-                    size='large'
-                    color='secondary'
+                    variant="contained"
+                    size="large"
+                    color="secondary"
                     onClick={() => setStarted(true)}
                   >
                     Start
@@ -69,7 +72,7 @@ function App() {
         </div>
       </div>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

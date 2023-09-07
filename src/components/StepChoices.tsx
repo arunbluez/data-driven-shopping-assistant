@@ -1,9 +1,10 @@
 import { Checkbox, Radio } from "@mui/material"
-import { useState } from "react"
 
 type Props = {
-  choices: string[]
+  choices: readonly string[]
   type: choiceType
+  selected: string[]
+  setSelected: (items: string[]) => void
 }
 
 enum choiceType {
@@ -11,9 +12,12 @@ enum choiceType {
   RADIO,
 }
 
-export default function StepChoices({ choices, type }: Props) {
-  const [selected, setSelected] = useState<string[]>([])
-
+export default function StepChoices({
+  choices,
+  type,
+  selected,
+  setSelected,
+}: Props) {
   const handleCheckBox = (choice: string) => {
     if (selected?.includes(choice)) {
       const filtered = selected.filter((x) => x !== choice)
@@ -34,10 +38,7 @@ export default function StepChoices({ choices, type }: Props) {
                 className="pl-4 pr-6 py-2 border border-gray-600 rounded-xl max-w-max cursor-pointer hover:scale-105 hover:bg-red-100 duration-100"
                 onClick={() => handleCheckBox(choice)}
               >
-                <Checkbox
-                  checked={selected.includes(choice)}
-                  onChange={() => handleCheckBox(choice)}
-                />
+                <Checkbox checked={selected.includes(choice)} />
                 {choice}
               </div>
             )
@@ -49,7 +50,6 @@ export default function StepChoices({ choices, type }: Props) {
               >
                 <Radio
                   checked={selected.includes(choice)}
-                  onChange={() => setSelected([choice])}
                   value={choice}
                   name="radio-buttons"
                   inputProps={{ "aria-label": choice }}
