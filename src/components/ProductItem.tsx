@@ -2,10 +2,11 @@ import { Rating } from '@mui/material';
 import EnergyLabel from './EnergyLabel/EnergyLabel';
 import { Product } from '../product/product';
 
-type Props = {
+interface ProductItemProps {
   product: Product;
-};
-export default function ProductItem({ product }: Props) {
+}
+
+export default function ProductItem({ product }: ProductItemProps) {
   return (
     <div className='w-full border border-gray-400 rounded-xl p-4'>
       <div className='flex flex-col gap-2'>
@@ -32,7 +33,7 @@ export default function ProductItem({ product }: Props) {
           <div className='flex flex-col sm:flex-row justify-between'>
             <div className='flex flex-col gap-2 items-start justify-start p-4'>
               {product.topFeatures.map((feature) => (
-                <div className='text-start'>
+                <div key={feature.name} className='text-start'>
                   <p className='text-sm'>{feature.name}</p>
                   <p className='font-bold'>{feature.value}</p>
                 </div>

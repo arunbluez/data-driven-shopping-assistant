@@ -1,13 +1,13 @@
-import { Checkbox, Radio } from "@mui/material"
-import { DisplayFilterValueType } from "../filter/filter"
-import { extractFilterReturnType } from "../filter/extractFilters"
+import { Checkbox, Radio } from "@mui/material";
+import { DisplayFilterValueType } from "../filter/filter";
+import { extractFilterReturnType } from "../filter/extractFilters";
 
 type Props = {
-  question: extractFilterReturnType
-  type: choiceType
-  selected: string[]
-  setSelected: (items: string[]) => void
-}
+  question: extractFilterReturnType;
+  type: choiceType;
+  selected: string[];
+  setSelected: (items: string[]) => void;
+};
 
 enum choiceType {
   MULTIPLE,
@@ -22,13 +22,13 @@ export default function StepChoices({
 }: Props) {
   const handleCheckBox = (choice: string) => {
     if (selected?.includes(choice)) {
-      const filtered = selected.filter((x) => x !== choice)
-      setSelected([...filtered])
+      const filtered = selected.filter((x) => x !== choice);
+      setSelected([...filtered]);
     } else {
-      selected?.push(choice)
-      setSelected([...selected])
+      selected?.push(choice);
+      setSelected([...selected]);
     }
-  }
+  };
 
   return (
     <div className="flex justify-center p-4">
@@ -43,7 +43,7 @@ export default function StepChoices({
                 <Checkbox checked={selected.includes(choice.value)} />
                 {choice.label}
               </div>
-            )
+            );
           } else {
             return (
               <div
@@ -58,10 +58,10 @@ export default function StepChoices({
                 />
                 {choice.label}
               </div>
-            )
+            );
           }
         })}
       </div>
     </div>
-  )
+  );
 }

@@ -1,106 +1,110 @@
-import * as React from "react"
-import Box from "@mui/material/Box"
-import Stepper from "@mui/material/Stepper"
-import Step from "@mui/material/Step"
-import StepLabel from "@mui/material/StepLabel"
-import Button from "@mui/material/Button"
-import StepChoices from "./StepChoices"
-import { ApplyableFilter } from "../filter/filter"
-import { useBoundStore } from "../stores/store"
-import { extractFilterReturnType } from "../filter/extractFilters"
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import Button from "@mui/material/Button";
+import StepChoices from "./StepChoices";
+import { ApplyableFilter } from "../filter/filter";
+import { useBoundStore } from "../stores/store";
+import { extractFilterReturnType } from "../filter/extractFilters";
 
-const steps = ["Select campaign settings", "Create an ad group", "Create an ad"]
+const steps = [
+  "Select campaign settings",
+  "Create an ad group",
+  "Create an ad",
+];
 
-const optionalSteps: number[] = []
+const optionalSteps: number[] = [];
 
 type Props = {
-  filters: extractFilterReturnType[]
-}
+  filters: extractFilterReturnType[];
+};
 enum choiceType {
   MULTIPLE,
   RADIO,
 }
 
 export default function StepperComponent({ filters }: Props) {
-  const [activeStep, setActiveStep] = React.useState(0)
-  const [skipped, setSkipped] = React.useState(new Set<number>())
-  const [selected, setSelected] = React.useState<string[]>([])
-  const selectedState = useBoundStore((state) => state.selectedState)
-  const setSelectedState = useBoundStore((state) => state.setSelectedState)
-  const resetSelectedState = useBoundStore((state) => state.resetSelectedState)
+  const [activeStep, setActiveStep] = React.useState(0);
+  const [skipped, setSkipped] = React.useState(new Set<number>());
+  const [selected, setSelected] = React.useState<string[]>([]);
+  const selectedState = useBoundStore((state) => state.selectedState);
+  const setSelectedState = useBoundStore((state) => state.setSelectedState);
+  const resetSelectedState = useBoundStore((state) => state.resetSelectedState);
   const isStepOptional = (step: number) => {
-    return optionalSteps.includes(step)
-  }
+    return optionalSteps.includes(step);
+  };
 
   const isStepSkipped = (step: number) => {
-    return skipped.has(step)
-  }
+    return skipped.has(step);
+  };
 
   const handleNext = () => {
-    let newSkipped = skipped
+    let newSkipped = skipped;
     if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values())
-      newSkipped.delete(activeStep)
+      newSkipped = new Set(newSkipped.values());
+      newSkipped.delete(activeStep);
     }
 
-    setActiveStep((prevActiveStep) => prevActiveStep + 1)
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
 
     const filterSelected: ApplyableFilter = {
       feature: filters[activeStep].filterName,
       filterFor: selected,
-    }
-    setSelectedState(filterSelected, activeStep)
-    setSelected([])
-    setSkipped(newSkipped)
-  }
+    };
+    setSelectedState(filterSelected, activeStep);
+    setSelected([]);
+    setSkipped(newSkipped);
+  };
 
   const handleBack = () => {
-    setSelected([...selectedState[activeStep - 1].filterFor])
-    setActiveStep((prevActiveStep) => prevActiveStep - 1)
-  }
+    setSelected([...selectedState[activeStep - 1].filterFor]);
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
 
   const handleSkip = () => {
     if (!isStepOptional(activeStep)) {
       // You probably want to guard against something like this,
       // it should never occur unless someone's actively trying to break something.
-      throw new Error("You can't skip a step that isn't optional.")
+      throw new Error("You can't skip a step that isn't optional.");
     }
 
-    setActiveStep((prevActiveStep) => prevActiveStep + 1)
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
     setSkipped((prevSkipped) => {
-      const newSkipped = new Set(prevSkipped.values())
-      newSkipped.add(activeStep)
-      return newSkipped
-    })
-  }
+      const newSkipped = new Set(prevSkipped.values());
+      newSkipped.add(activeStep);
+      return newSkipped;
+    });
+  };
 
   const handleReset = () => {
-    setActiveStep(0)
-    setSelected([])
-    resetSelectedState()
-  }
+    setActiveStep(0);
+    setSelected([]);
+    resetSelectedState();
+  };
 
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper activeStep={activeStep}>
         {filters.map((_, index) => {
-          const stepProps: { completed?: boolean } = {}
+          const stepProps: { completed?: boolean } = {};
           const labelProps: {
-            optional?: React.ReactNode
-          } = {}
+            optional?: React.ReactNode;
+          } = {};
           // if (isStepOptional(index)) {
           //   labelProps.optional = (
           //     <Typography variant="caption">Optional</Typography>
           //   )
           // }
           if (isStepSkipped(index)) {
-            stepProps.completed = false
+            stepProps.completed = false;
           }
           return (
             <Step key={index} {...stepProps}>
               <StepLabel {...labelProps}></StepLabel>
             </Step>
-          )
+          );
         })}
       </Stepper>
       {activeStep === steps.length ? (
@@ -148,5 +152,5 @@ export default function StepperComponent({ filters }: Props) {
         </React.Fragment>
       )}
     </Box>
-  )
+  );
 }

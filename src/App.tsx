@@ -1,25 +1,25 @@
-import { Avatar, Button, ThemeProvider, createTheme } from "@mui/material"
-import "./App.css"
-import StepperComponent from "./components/StepperComponent"
-import NavBar from "./components/NavBar"
-import ProductList from "./components/ProductList"
-import avatar from "./assets/avatar.png"
-import { useMemo, useState } from "react"
-import { fetchProducts } from "./product/fetchProducts"
-import { extractFilters } from "./filter/extractFilters"
-import { useBoundStore } from "./stores/store"
-import { applyFilters } from "./filter/applyFilters"
+import { Avatar, Button, ThemeProvider, createTheme } from "@mui/material";
+import "./App.css";
+import StepperComponent from "./components/StepperComponent";
+import NavBar from "./components/NavBar";
+import ProductList from "./components/ProductList";
+import avatar from "./assets/avatar.png";
+import { useMemo, useState } from "react";
+import { fetchProducts } from "./product/fetchProducts";
+import { extractFilters } from "./filter/extractFilters";
+import { useBoundStore } from "./stores/store";
+import { applyFilters } from "./filter/applyFilters";
 
 function App() {
-  const [started, setStarted] = useState(false)
-  const products = fetchProducts()
-  const filters = extractFilters(products)
+  const [started, setStarted] = useState(false);
+  const products = fetchProducts();
+  const filters = extractFilters(products);
 
-  const selectedState = useBoundStore((state) => state.selectedState)
+  const selectedState = useBoundStore((state) => state.selectedState);
 
   const filteredProducts = useMemo(() => {
-    return applyFilters(products, selectedState)
-  }, [selectedState, products])
+    return applyFilters(products, selectedState);
+  }, [selectedState, products]);
 
   const theme = createTheme({
     palette: {
@@ -30,7 +30,7 @@ function App() {
         main: "rgb(0, 0, 0)",
       },
     },
-  })
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -41,7 +41,7 @@ function App() {
             <Avatar alt="DDSA" src={avatar} sx={{ width: 120, height: 120 }} />
             <div className="text-center md:text-left md:my-8">
               <p className="text-3xl md:text-4xl font-bold mb-2">
-                Data Driven Shopping Assistant
+                ShopSmartly: Guided Product Discovery
               </p>
               <p className="font-light text-gray-600 text-sm md:text-base">
                 The idea is to have a customer data driven shopping journey
@@ -82,7 +82,7 @@ function App() {
         </div>
       </div>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
