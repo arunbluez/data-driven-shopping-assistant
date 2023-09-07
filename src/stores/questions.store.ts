@@ -1,9 +1,10 @@
 import { StateCreator } from "zustand"
-import { DisplayableFilter } from "../filter/filter"
+import { ApplyableFilter } from "../filter/filter"
 
 export interface QuestionSlice {
-  selectedState: DisplayableFilter[][]
-  setSelectedState: (input: DisplayableFilter[], index: number) => void
+  selectedState: ApplyableFilter[]
+  setSelectedState: (input: ApplyableFilter, index: number) => void
+  resetSelectedState: () => void
 }
 
 export const createQuestionSlice: StateCreator<QuestionSlice> = (set) => ({
@@ -16,4 +17,8 @@ export const createQuestionSlice: StateCreator<QuestionSlice> = (set) => ({
         selectedState: newState,
       }
     }),
+  resetSelectedState: () =>
+    set(() => ({
+      selectedState: [],
+    })),
 })

@@ -4,15 +4,23 @@ import StepperComponent from "./components/StepperComponent"
 import NavBar from "./components/NavBar"
 import ProductList from "./components/ProductList"
 import avatar from "./assets/avatar.png"
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { fetchProducts } from "./product/fetchProducts"
 import { extractFilters } from "./filter/extractFilters"
+import { useBoundStore } from "./stores/store"
+import { applyFilters } from "./filter/applyFilters"
 
 function App() {
   const [started, setStarted] = useState(false)
   const products = fetchProducts()
   const filters = extractFilters(products)
-  const filterArray = Object.values(filters)
+
+  const selectedState = useBoundStore((state) => state.selectedState)
+
+  const filteredProducts = useMemo(() => {
+    return applyFilters(products, selectedState)
+  }, [selectedState, products])
+
   const theme = createTheme({
     palette: {
       primary: {
@@ -48,7 +56,7 @@ function App() {
 
           <div className="bg-white rounded-2xl p-6 border border-gray-400 mb-8 ">
             {started ? (
-              <StepperComponent filters={filterArray} />
+              <StepperComponent filters={filters} />
             ) : (
               <div className="flex flex-col items-start justify-between p-4 min-h-[300px]">
                 <p className="text-2xl md:text-6xl font-bold">
@@ -70,7 +78,7 @@ function App() {
               </div>
             )}
           </div>
-          <ProductList products={products} />
+          <ProductList products={filteredProducts} />
         </div>
       </div>
     </ThemeProvider>
