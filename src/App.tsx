@@ -6,10 +6,13 @@ import ProductList from "./components/ProductList"
 import avatar from "./assets/avatar.png"
 import { useState } from "react"
 import { fetchProducts } from "./product/fetchProducts"
+import { extractFilters } from "./filter/extractFilters"
 
 function App() {
   const [started, setStarted] = useState(false)
   const products = fetchProducts()
+  const filters = extractFilters(products)
+  const filterArray = Object.values(filters)
   const theme = createTheme({
     palette: {
       primary: {
@@ -45,7 +48,7 @@ function App() {
 
           <div className="bg-white rounded-2xl p-6 border border-gray-400 mb-8 ">
             {started ? (
-              <StepperComponent />
+              <StepperComponent filters={filterArray} />
             ) : (
               <div className="flex flex-col items-start justify-between p-4 min-h-[300px]">
                 <p className="text-2xl md:text-6xl font-bold">

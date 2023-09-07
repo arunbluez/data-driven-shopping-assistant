@@ -5,14 +5,25 @@ import Step from "@mui/material/Step"
 import StepLabel from "@mui/material/StepLabel"
 import Button from "@mui/material/Button"
 import Typography from "@mui/material/Typography"
-import StepWrapper from "./StepWrapper"
+import StepChoices from "./StepChoices"
+import { DisplayableFilter } from "../filter/filter"
 
 const steps = ["Select campaign settings", "Create an ad group", "Create an ad"]
+
 const optionalSteps = [1]
 
-export default function StepperComponent() {
+type Props = {
+  filters: DisplayableFilter[]
+}
+enum choiceType {
+  MULTIPLE,
+  RADIO,
+}
+
+export default function StepperComponent({ filters }: Props) {
   const [activeStep, setActiveStep] = React.useState(0)
   const [skipped, setSkipped] = React.useState(new Set<number>())
+  const [selected, setSelected] = React.useState<string[]>([])
 
   const isStepOptional = (step: number) => {
     return optionalSteps.includes(step)
@@ -59,7 +70,7 @@ export default function StepperComponent() {
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => {
+        {filters.map((_, index) => {
           const stepProps: { completed?: boolean } = {}
           const labelProps: {
             optional?: React.ReactNode
@@ -73,7 +84,7 @@ export default function StepperComponent() {
             stepProps.completed = false
           }
           return (
-            <Step key={label} {...stepProps}>
+            <Step key={index} {...stepProps}>
               <StepLabel {...labelProps}></StepLabel>
             </Step>
           )
@@ -91,7 +102,17 @@ export default function StepperComponent() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <StepWrapper step={activeStep + 1} />
+          <div>
+            <p className="text-2xl font-black py-4 m-4">
+              {filters[activeStep].question}
+            </p>
+            <StepChoices
+              choices={filters[activeStep].values}
+              type={choiceType.MULTIPLE}
+              setSelected={setSelected}
+              selected={selected}
+            />
+          </div>
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button
               color="inherit"
