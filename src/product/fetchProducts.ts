@@ -1,5 +1,5 @@
-import rawProductData from "../data/products/tvs-extended.json"
-import type { Features, Product } from "./product"
+import rawProductData from '../data/products/tvs.json';
+import type { Features, Product } from './product';
 
 export const fetchProducts = (): readonly Product[] => {
   return rawProductData.data.products.map((value) => ({
@@ -18,26 +18,26 @@ export const fetchProducts = (): readonly Product[] => {
     features: extractFeatures(
       // @ts-expect-error I'm too lazy
       value.featureGroups.filter(
-        (value) => value.name === "Energieverbrauchsangaben (EU 2017/1369)"
+        (value) => value.name === 'Energieverbrauchsangaben (EU 2017/1369)'
       )[0].features
     ),
     topFeatures: value.featureGroups[0].features.slice(0, 4).map((feature) => ({
       ...feature,
       value: feature.values[0].value,
     })),
-  }))
-}
+  }));
+};
 
 const extractFeatures = (
   features: Array<{
-    name: string
-    values: Array<{ value: string; unit: string }>
+    name: string;
+    values: Array<{ value: string; unit: string }>;
   }>
 ): Features => ({
   displayTechnology: {
-    name: "Displaytechnologie",
+    name: 'Displaytechnologie',
     // todo: unsafe
-    value: features.filter((v) => v.name === "Verwendete Panel Technologie")[0]
+    value: features.filter((v) => v.name === 'Verwendete Panel Technologie')[0]
       .values[0].value,
   },
-})
+});
