@@ -6,6 +6,11 @@ import ProductList from './components/ProductList';
 import avatar from './assets/avatar.png';
 import { useState } from 'react';
 import { fetchProducts } from './product/fetchProducts';
+import { DisplayableFilter } from './filter/filter';
+
+const filters: DisplayableFilter[] = [
+  { question: 'question', values: ['answer 1'] },
+];
 
 function App() {
   const [started, setStarted] = useState(false);
@@ -45,7 +50,7 @@ function App() {
 
           <div className='bg-white rounded-2xl p-6 border border-gray-400 mb-8 '>
             {started ? (
-              <StepperComponent />
+              <StepperComponent filters={filters} />
             ) : (
               <div className='flex flex-col items-start justify-between p-4 min-h-[300px]'>
                 <p className='text-6xl font-bold'>Interseted in buying a TV?</p>
