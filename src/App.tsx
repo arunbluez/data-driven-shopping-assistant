@@ -38,7 +38,7 @@ function App() {
             <Avatar alt="DDSA" src={avatar} sx={{ width: 120, height: 120 }} />
             <div className="text-center md:text-left md:my-8">
               <p className="text-3xl md:text-4xl font-bold mb-2">
-                Data Driven Shopping Assistant
+                ShopSmartly: Guided Product Discovery
               </p>
               <p className="font-light text-gray-600 text-sm md:text-base">
                 The idea is to have a customer data driven shopping journey

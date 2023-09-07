@@ -21,7 +21,7 @@ export const extractFilters = (
     {
       filterName: "displayTechnology",
       filters: {
-        question: "Welche Displaytechnologie/n bevorzugen Sie?",
+        question: "Which display technology/s do you prefer?",
         values: displayTechnologies.map((tech) => ({
           label: tech,
           value: tech,
@@ -31,7 +31,7 @@ export const extractFilters = (
     {
       filterName: "displaySize",
       filters: {
-        question: "Welche Bildschirmgröße/n bevorzugen Sie?",
+        question: "Which screen size/s do you prefer?",
         values: displaySizes.map((size) => ({
           label: size,
           value: size,
@@ -41,7 +41,7 @@ export const extractFilters = (
     {
       filterName: "displayResolution",
       filters: {
-        question: "Welche Bildschirmauflösung/en bevorzugen Sie?",
+        question: "Which screen resolution/s do you prefer?",
         values: displayResolutions.map((res) => ({
           label: res.includes("3.840") ? "4K Display" : "2K Display",
           value: res,
@@ -86,7 +86,7 @@ export const extractFilter = (
 };
 
 const featureToQuestion: Record<FeatureName, string> = {
-  displayResolution: "Welche Bildschirmauflösung/en bevorzugen Sie?",
-  displaySize: "Welche Bildschirmgröße/n bevorzugen Sie?",
-  displayTechnology: "Welche Displaytechnologie/n bevorzugen Sie?",
+  displayResolution: "Which screen resolution/s do you prefer?",
+  displaySize: "Which screen size/s do you prefer?",
+  displayTechnology: "Which display technology/s do you prefer?",
 };
